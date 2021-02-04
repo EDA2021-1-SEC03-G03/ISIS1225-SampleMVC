@@ -60,5 +60,5 @@ def loadBooksTags(catalog):
     input_file = csv.DictReader(open(tagsfile, encoding='utf-8'))
     bookTags = model.createTagList()
     for tag in input_file:
-        model.addTag(bookTags, tag)    
+        model.addTag(bookTags, tag)
     return bookTags
